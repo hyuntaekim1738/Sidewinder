@@ -11,6 +11,9 @@ const Sessions = () => {
           <img src={Logo} alt="Company Logo" className="logo-img" />
           <h1>Sidewinder</h1>
         </div>
+        <div className="settings-button">
+          <button className="blue-button">Settings</button>
+        </div>
       </div>
       <div className="main-content">
         <div className="rounded-box">

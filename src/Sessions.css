@@ -1,8 +1,4 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
+
 
 .session {
   display: flex;
@@ -11,10 +7,16 @@ body, html {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Add padding or adjust as needed */
   color: white;
-  padding: 10px;
-  background: linear-gradient(to right, black, red);
-  height: 13vh;
+}
+
+.settings-button {
+  /* If the button needs additional styling */
+  /* For example, to align it vertically with the logo */
   display: flex;
   align-items: center;
 }
@@ -71,6 +73,15 @@ body, html {
   cursor: pointer;
 }
 
+.blue-button {
+  background: blue; /* Blue button background color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: right;
+}
 .data-table th:not(:first-child) {
   padding-left: 20px;
 }
