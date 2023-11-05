@@ -22,8 +22,7 @@ app.get("/api/items", async (req, res) => {
   }
 });
 
-const mongoose = require("mongoose");
-
+// Removed the second 'require' statement for 'mongoose'
 const itemSchema = new mongoose.Schema({
   name: String,
   description: String,
