@@ -1,10 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
 .settings {
   background: linear-gradient(to right, black, red);
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: fixed;
 }
 
 .header {

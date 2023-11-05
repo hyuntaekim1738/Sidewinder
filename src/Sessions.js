@@ -1,12 +1,13 @@
 import React from "react";
 import "./Sessions.css";
-import Logo from './game-icons-ouroboros.png';
+import Logo from './media/game-icons-ouroboros.png';
 import {Link } from 'react-router-dom';
-import Filter from './filter.svg';
+import Filter from './media/filter.svg';
+import backgroundImage from './media/gradl.jpg';
 
 const Sessions = () => {
   return (
-    <div className="session">
+    <div className="session" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="header">
         <div className="logo">
           <img src={Logo} alt="Company Logo" className="logo-img" />

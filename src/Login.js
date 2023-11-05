@@ -1,9 +1,9 @@
 import React from "react";
 import "./Login.css";
-import Logo from './game-icons-ouroboros.png';
-import Material from './material-symbols-lock.svg';
-import Google from './google-logo.png';
-import Image from './vector.svg';
+import Logo from './media/game-icons-ouroboros.png';
+import Material from './media/material-symbols-lock.svg';
+import Google from './media/google-logo.png';
+import Image from './media/vector.svg';
 
 export const Login = () => {
   return (

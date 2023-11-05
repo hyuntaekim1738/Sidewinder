@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .login {
   background-color: linear-gradient(to right, black, red);
   display: flex;

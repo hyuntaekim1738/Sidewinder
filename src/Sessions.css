@@ -1,9 +1,16 @@
 /* New CSS for the layout */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .session {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: linear-gradient(to right, black, red); /* Apply gradient to the entire page */
+  background-size: cover; /* Cover the entire div */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 100vh; /* Adjust as needed */
 }
 
 .session .header {
@@ -54,7 +61,8 @@
   padding: 20px;
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-height: 60vh;
+  width: 35vw;
+  height: 50vh;
   overflow-y: auto;
 }
 
