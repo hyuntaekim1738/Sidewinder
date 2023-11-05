@@ -10,7 +10,7 @@ const Details = () => {
     setDisplayText('This section will display artificial intelligence generated recommendations for racing performance upon clicking the "Get Tips/Help" button');
   }
   return (
-    <div className="details">
+    <div className="details" >
       <div className="div">
         <div className="text-wrapper">Sidewinder</div>
         <img className="vector" alt="Vector" src="vector.svg" />
