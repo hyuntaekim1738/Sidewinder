@@ -9,31 +9,62 @@ const Details = () => {
         <div className="text-wrapper">Sidewinder</div>
         <img className="vector" alt="Vector" src="vector.svg" />
         <div className="overlap-group">
-          <img className="rectangle" alt="Rectangle" src="rectangle-21.svg" />
-          <img className="img" alt="Rectangle" src="rectangle-22.svg" />
-          <div className="text-wrapper-2">Session X</div>
-          <div className="text-wrapper-3">Date/Time</div>
-          <div className="text-wrapper-4">Total Time</div>
-          <div className="text-wrapper-5">R/T</div>
-          <div className="text-wrapper-6">60’</div>
-          <div className="text-wrapper-7">330</div>
-          <div className="text-wrapper-8">1/8</div>
-          <div className="text-wrapper-9">MPH</div>
-          <div className="text-wrapper-10">1000</div>
-          <div className="text-wrapper-11">1/4</div>
-          <div className="text-wrapper-12">MPH</div>
+          <table className="details-table">
+            <thead><h2>Session X</h2></thead>
+            <tbody>
+              <tr>
+                <td>Date/Time</td>
+                <td>Sample date time</td>
+              </tr>
+              <tr>
+                <td>Total Time</td>
+                <td>Sample total time</td>
+              </tr>
+              <tr>
+                <td>R/T</td>
+                <td>Sample R/T</td>
+              </tr>
+              <tr>
+                <td>60'</td>
+                <td>Sample 60'</td>
+              </tr>
+              <tr>
+                <td>330</td>
+                <td>Sample 330</td>
+              </tr>
+              <tr>
+                <td>1/8</td>
+                <td>Sample 1/8</td>
+              </tr>
+              <tr>
+                <td>MPH</td>
+                <td>Sample MPH</td>
+              </tr>
+              <tr>
+                <td>1000</td>
+                <td>Sample 1000</td>
+              </tr>
+              <tr>
+                <td>1/4</td>
+                <td>Sample 1/4</td>
+              </tr>
+              <tr>
+                <td>MPH</td>
+                <td>Sample MPH</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div className="overlap">
           <div className="text-wrapper-13">Notes</div>
-          <div className="text-wrapper-14">Enter your notes here</div>
+          <input className="text-wrapper-14" placeholder="Enter your notes here" type="text"></input>
           <p className="p">
             This section will display artificial intelligence generated recommendations for the user’s racing
             performance upon clicking the “Get Tips/Help” button
           </p>
           <div className="overlap-2">
             <div className="text-wrapper-15">Get</div>
-            <div className="rectangle-2" />
-            <div className="text-wrapper-16">Get Tips/Help</div>
+            <button className="text-wrapper-16 rectangle-2" type="submit">Get Tips/Help</button>
           </div>
         </div>
         <img className="game-icons-ouroboros" alt="Game icons ouroboros" src={Logo} />
