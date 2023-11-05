@@ -4,8 +4,9 @@ body {
 }
 
 .signup {
-    background-color: linear-gradient(to right, black, red);
-    display: flex;
+  background-image: url('./media/gradl.jpg');
+  background-size: cover; /* Cover the entire div */
+  background-repeat: no-repeat; /* Do not repeat the image */    display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
@@ -13,8 +14,6 @@ body {
   }
   
   .signup .div {
-    background: linear-gradient(to right, black, red);
-    background-color: linear-gradient(to right, black, red);
     height: 1024px;
     overflow: hidden;
     position: relative;

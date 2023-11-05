@@ -1,15 +1,20 @@
 import React from "react";
 import "./SignUp.css";
-import Logo from './game-icons-ouroboros.png';
-import Material from './material-symbols-lock.svg';
-import Google from './google-logo.png';
-import Image from './vector.svg';
+import Logo from './media/game-icons-ouroboros.png';
+import Material from './media/material-symbols-lock.svg';
+import Google from './media/google-logo.png';
+import Image from './media/vector.svg';
 
 export const SignUp = () => {
   return (
     <div className="signup">
       <div className="div">
-        <img className="game-icons-ouroboros" alt="Game icons ouroboros" src={Logo} />
+        <div className="header">
+            <div className="logo">
+              <img src={Logo} alt="Company Logo" className="logo-img" />
+              <h1>Sidewinder</h1>
+            </div>
+          </div>
         <div className="overlap-group">
           <div className="rectangle" />
           <input
@@ -33,7 +38,6 @@ export const SignUp = () => {
           <div className="text-wrapper-4">Or</div>
           <button type="submit" className="text-wrapper-5 rectangle-5">Sign Up</button>
         </div>
-        <div className="text-wrapper-7">Sidewinder</div>
         <img className="vector-2" alt="Vector" src="image.svg" />
         <div className="text-wrapper-8">Sign Up</div>
       </div>

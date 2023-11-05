@@ -12,8 +12,12 @@ const Details = () => {
   return (
     <div className="details" >
       <div className="div">
-        <div className="text-wrapper">Sidewinder</div>
-        <img className="vector" alt="Vector" src="vector.svg" />
+        <div className="header">
+          <div className="logo">
+            <img src={Logo} alt="Company Logo" className="logo-img" />
+            <h1>Sidewinder</h1>
+          </div>
+        </div>
         <div className="overlap-group">
           <table className="details-table">
             <thead><h2>Session X</h2></thead>
@@ -63,16 +67,16 @@ const Details = () => {
         </div>
         <div className="overlap">
           <div className="text-wrapper-13"><h2>Notes</h2></div>
-          <input className="text-wrapper-14" placeholder="Enter your notes here" type="text"></input>
+          <input className="text-wrapper-14" placeholder="Enter your notes here" type="text" />
+          <div>
+            <button className="text-wrapper-16 rectangle-2" onClick={generateTips}>Get Tips/Help</button>
+          </div>
           <p className="p">
             {displayText}
           </p>
-          <div className="overlap-2">
-            <div className="text-wrapper-15">Get</div>
-            <button className="text-wrapper-16 rectangle-2" onClick={generateTips}>Get Tips/Help</button>
-          </div>
+          
         </div>
-        <img className="game-icons-ouroboros" alt="Game icons ouroboros" src={Logo} />
+
       </div>
     </div>
   );
