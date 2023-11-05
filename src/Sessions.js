@@ -1,11 +1,23 @@
-import React from "react";
+
 import "./Sessions.css";
 import Logo from './media/game-icons-ouroboros.png';
 import {Link } from 'react-router-dom';
-import Filter from './media/filter.svg';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import backgroundImage from './media/gradl.jpg';
 
 const Sessions = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios('/api/raceData');
+      setData(result.data);
+    };
+
+    fetchData();
+  }, []);
+  
   return (
     <div className="session" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="header">
