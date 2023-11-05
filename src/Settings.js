@@ -1,6 +1,6 @@
 import React from "react";
 import "./Settings.css";
-import Logo from './media/game-icons-ouroboros.png';
+import Logo from "./media/acr.png";
 
 const Settings = () => {
   return (

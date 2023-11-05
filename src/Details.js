@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import "./Details.css";
-import Logo from './media/game-icons-ouroboros.png';
+import Logo from "./media/acr.png";
 
 
 const Details = () => {

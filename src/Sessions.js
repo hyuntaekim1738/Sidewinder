@@ -1,5 +1,5 @@
 import "./Sessions.css";
-import Logo from "./media/game-icons-ouroboros.png";
+import Logo from "./media/acr.png";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -14,7 +14,9 @@ const Sessions = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/DragStripRaces");
+        const response = await axios.get(
+          "http://localhost:5000/api/DragStripRaces"
+        );
         setRaceData(response.data);
       } catch (error) {
         console.error("Error fetching data: ", error);
@@ -24,11 +26,15 @@ const Sessions = () => {
   }, []);
 
   // Get unique dates and vehicles for the dropdowns
-  const dates = [...new Set(raceData.map(item => item.Date))];
-  const vehicles = [...new Set(raceData.map(item => item.Vehicle))];
+  const dates = [...new Set(raceData.map((item) => item.Date))];
+  const vehicles = [...new Set(raceData.map((item) => item.Vehicle))];
 
   const handleSubmit = () => {
-    setFilteredData(raceData.filter(item => item.Date === selectedDate && item.Vehicle === selectedVehicle));
+    setFilteredData(
+      raceData.filter(
+        (item) => item.Date === selectedDate && item.Vehicle === selectedVehicle
+      )
+    );
   };
 
   return (
@@ -50,41 +56,60 @@ const Sessions = () => {
         </div>
       </div>
 
-      <div className="main-content">
-        <h2 className="title">Home</h2>
-        <div className="rounded-box">
+      <div className="flex-container">
+        <div className="left-side">
+          <div className="rounded-box2"><h2>Notes</h2></div>
+          <div className="rounded-box3">
           <div>
-            <select value={selectedDate} onChange={e => setSelectedDate(e.target.value)}>
-              <option value="">Select Date</option>
-              {dates.map((date, index) => (
-                <option key={index} value={date}>{date}</option>
+              <select
+                value={selectedDate}
+                onChange={(e) => setSelectedDate(e.target.value)}
+              >
+                <option value="">Select Date</option>
+                {dates.map((date, index) => (
+                  <option key={index} value={date}>
+                    {date}
+                  </option>
+                ))}
+              </select>
+              <select
+                value={selectedVehicle}
+                onChange={(e) => setSelectedVehicle(e.target.value)}
+              >
+                <option value="">Select Vehicle</option>
+                {vehicles.map((vehicle, index) => (
+                  <option key={index} value={vehicle}>
+                    {vehicle}
+                  </option>
+                ))}
+              </select>
+              <button onClick={handleSubmit}>Submit</button>
+              {filteredData.map((item, index) => (
+                <div key={index}>
+                  <h2>Date: {item.Date}</h2>
+                  <p>Time: {item.Time}</p>
+                  <p>Vehicle: {item.Vehicle}</p>
+                  <p>Location of Race: {item["Location of Race"]}</p>
+                  <p>Total Race Time: {item["Total Race Time"]}</p>
+                  <p>Reaction Time: {item["Reaction Time"]}</p>
+                  <p>60-foot time: {item["60-foot time"]}</p>
+                  <p>330-foot time: {item["330-foot time"]}</p>
+                  <p>660-foot time: {item["660-foot time"]}</p>
+                  <p>1/8-mile speed: {item["1/8-mile speed"]}</p>
+                  <p>1,000-foot time: {item["1,000-foot time"]}</p>
+                  <p>1/4-mile time: {item["1/4-mile time"]}</p>
+                  <p>1/4-mile speed: {item["1/4-mile speed"]}</p>
+                  <p>MPH: {item.MPH}</p>
+                </div>
               ))}
-            </select>
-            <select value={selectedVehicle} onChange={e => setSelectedVehicle(e.target.value)}>
-              <option value="">Select Vehicle</option>
-              {vehicles.map((vehicle, index) => (
-                <option key={index} value={vehicle}>{vehicle}</option>
-              ))}
-            </select>
-            <button onClick={handleSubmit}>Submit</button>
-            {filteredData.map((item, index) => (
-              <div key={index}>
-                <h2>Date: {item.Date}</h2>
-                <p>Time: {item.Time}</p>
-                <p>Vehicle: {item.Vehicle}</p>
-                <p>Location of Race: {item['Location of Race']}</p>
-                <p>Total Race Time: {item['Total Race Time']}</p>
-                <p>Reaction Time: {item['Reaction Time']}</p>
-                <p>60-foot time: {item['60-foot time']}</p>
-                <p>330-foot time: {item['330-foot time']}</p>
-                <p>660-foot time: {item['660-foot time']}</p>
-                <p>1/8-mile speed: {item['1/8-mile speed']}</p>
-                <p>1,000-foot time: {item['1,000-foot time']}</p>
-                <p>1/4-mile time: {item['1/4-mile time']}</p>
-                <p>1/4-mile speed: {item['1/4-mile speed']}</p>
-                <p>MPH: {item.MPH}</p>
-              </div>
-            ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="right-side">
+          <div className="rounded-box">
+            <h2>Chat gpt response</h2>
+            
           </div>
         </div>
       </div>

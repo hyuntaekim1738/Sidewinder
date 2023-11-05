@@ -1,6 +1,6 @@
 import React from "react";
 import "./Login.css";
-import Logo from './media/game-icons-ouroboros.png';
+import Logo from "./media/acr.png";
 import Material from './media/material-symbols-lock.svg';
 import Google from './media/google-logo.png';
 import Image from './media/vector.svg';
