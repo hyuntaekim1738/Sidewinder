@@ -5,7 +5,9 @@ body {
 
 
 .settings {
-  background: linear-gradient(to right, black, red);
+  background-image: url('./media/gradl.jpg');
+    background-size: cover; /* Cover the entire div */
+    background-repeat: no-repeat; /* Do not repeat the image */
   display: flex;
   flex-direction: column;
   width: 100vw;

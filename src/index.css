@@ -1,7 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, black, red);
+  background-image: url('./media/gradl.jpg');
+    background-size: cover; /* Cover the entire div */
+    background-repeat: no-repeat; /* Do not repeat the image */
   height: 100vh;
   width: 100vw;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,7 +14,6 @@ body {
 }
 
 #root {
-  background-color: linear-gradient(to right, black, red);
   height: 100vh;
   width: 100vw;
 }

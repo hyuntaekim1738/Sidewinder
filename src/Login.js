@@ -9,7 +9,12 @@ export const Login = () => {
   return (
     <div className="login">
       <div className="div">
-        <img className="game-icons-ouroboros" alt="Game icons ouroboros" src={Logo} />
+        <div className="header">
+          <div className="logo">
+            <img src={Logo} alt="Company Logo" className="logo-img" />
+            <h1>Sidewinder</h1>
+          </div>
+        </div>
         <div className="overlap-group">
           <div className="rectangle" />
           <input
@@ -35,7 +40,7 @@ export const Login = () => {
           <button type="submit" className="text-wrapper-5 rectangle-5">Login</button>
           <div className="text-wrapper-6"><a href="/">Forgot Password?</a></div>
         </div>
-        <div className="text-wrapper-7">Sidewinder</div>
+        <h2>Sidewinder</h2>
         <img className="vector-2" alt="Vector" src="image.svg" />
         <div className="text-wrapper-8">Login</div>
       </div>
