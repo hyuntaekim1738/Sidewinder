@@ -8,6 +8,7 @@ import Settings from './Settings';
 import Login from './Login.js';
 import Details from './Details.js';
 import SignUp from './SignUp.js';
+import Test from './test.js';
 
 // Define your App component
 const App = () => (
@@ -18,6 +19,7 @@ const App = () => (
       <Route path="/settings" element={<Settings />} />
       <Route path="/details" element={<Details />} />
       <Route path="/signup" element={<SignUp />} />
+      <Route path="/test" element={<Test />} />
     </Routes>
   </Router>
 );
