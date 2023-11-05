@@ -35,7 +35,7 @@ export const Login = () => {
           <button type="submit" className="text-wrapper-5 rectangle-5">Login</button>
           <div className="text-wrapper-6"><a href="/">Forgot Password?</a></div>
         </div>
-        <div className="text-wrapper-7">Project Name</div>
+        <div className="text-wrapper-7">Sidewinder</div>
         <img className="vector-2" alt="Vector" src="image.svg" />
         <div className="text-wrapper-8">Login</div>
       </div>

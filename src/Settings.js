@@ -31,7 +31,7 @@ const Settings = () => {
             <div className="text-wrapper-2">Vehicle Year</div>
           </div>
         </div>
-        <div className="text-wrapper-6">Project Name</div>
+        <div className="text-wrapper-6">Sidewinder</div>
         <img className="vector" alt="Vector" src="vector.svg" />
         <div className="text-wrapper-7">Settings</div>
       </div>

@@ -6,7 +6,7 @@ const Details = () => {
   return (
     <div className="details">
       <div className="div">
-        <div className="text-wrapper">Project Name</div>
+        <div className="text-wrapper">Sidewinder</div>
         <img className="vector" alt="Vector" src="vector.svg" />
         <div className="overlap-group">
           <img className="rectangle" alt="Rectangle" src="rectangle-21.svg" />

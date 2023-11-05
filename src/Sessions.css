@@ -1,32 +1,86 @@
-/* Your existing CSS styles */
-
-/* New styles for the table */
-.sessions-table {
-  width: 100%;
-  border-collapse: collapse;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.sessions-table th, .sessions-table td {
-  border: 1px solid #acacac;
+.session {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  color: white;
   padding: 10px;
-  text-align: center;
-}
-
-.sessions .filter-button {
+  background: linear-gradient(to right, black, red);
+  height: 13vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 8px 15px;
-  background-color: #2f89fc;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 125px; /* Adjust the width as needed */
+  height: auto; /* Retains aspect ratio */
+  margin-right: 10px; /* Spacing between the logo and the company name */
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align the content to the top */
+  background: linear-gradient(to right, black, red);
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.rounded-box {
+  border-radius: 15px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-height: 60vh; /* Set a maximum height for the table */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds the maximum height */
+}
+
+.data-table {
+  border-collapse: collapse; /* Remove default table borders */
+  width: 100%;
+}
+
+.data-table th {
+  text-align: left;
+  padding: 8px;
+}
+
+.data-table th button {
+  background: blue; /* Blue button background color */
   color: white;
   border: none;
+  padding: 8px 12px;
   border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
 }
 
-.sessions .icon {
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
+.data-table th:not(:first-child) {
+  padding-left: 20px;
 }
+
+.data-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc; /* Row borders */
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none; /* Remove bottom border from the last row */
+}
+
