@@ -1,6 +1,6 @@
 // Import necessary modules
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Import your page components
 import Sessions from './Sessions.js';
