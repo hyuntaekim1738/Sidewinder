@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Sessions from './Sessions.js';
 import Settings from './Settings';
 import Login from './Login.js';
+import Details from './Details.js';
 
 // Define your App component
 const App = () => (
@@ -14,6 +15,7 @@ const App = () => (
       <Route path="/" element={<Sessions />} />
       <Route path="/login" element={<Login />} />
       <Route path="/settings" element={<Settings />} />
+      <Route path="/details" element={<Details />} />
     </Routes>
   </Router>
 );

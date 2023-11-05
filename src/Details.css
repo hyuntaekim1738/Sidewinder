@@ -102,10 +102,9 @@
   .details .overlap {
     background-color: white;
     border-radius: 15px;
-    max-height: 60vh; /* Set a maximum height for the table */
+    height: 65vh; /* Set a maximum height for the table */
     overflow-y: auto; /* Enable vertical scrolling when content exceeds the maximum height */
     background-size: 100% 100%;
-    height: 675px;
     left: 698px;
     position: absolute;
     top: 210px;
@@ -115,7 +114,7 @@
   .details .text-wrapper-13 {
     color: #000000;
     font-family: "Inter-Regular", Helvetica;
-    font-size: 40px;
+    font-size: 15px;
     font-weight: 400;
     left: 37px;
     letter-spacing: 0;

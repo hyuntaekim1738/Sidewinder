@@ -28,7 +28,7 @@ const Settings = () => {
             <div className="setting-input">
               <input placeholder="Engine Horsepower" type="text" className="rounded-input" />
             </div>
-            <div>
+            <div >
               <button type="submit" className="blue-button big-button">Save</button>
             </div>
           </form>

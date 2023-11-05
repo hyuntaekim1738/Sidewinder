@@ -1,8 +1,13 @@
-import React from "react";
+import { React, useState } from "react";
 import "./Details.css";
 import Logo from './game-icons-ouroboros.png';
 
 const Details = () => {
+  const [displayText, setDisplayText] = useState("");
+
+  const generateTips = () => {
+    setDisplayText('This section will display artificial intelligence generated recommendations for racing performance upon clicking the "Get Tips/Help" button');
+  }
   return (
     <div className="details">
       <div className="div">
@@ -56,15 +61,14 @@ const Details = () => {
           </table>
         </div>
         <div className="overlap">
-          <div className="text-wrapper-13">Notes</div>
+          <div className="text-wrapper-13"><h2>Notes</h2></div>
           <input className="text-wrapper-14" placeholder="Enter your notes here" type="text"></input>
           <p className="p">
-            This section will display artificial intelligence generated recommendations for the user’s racing
-            performance upon clicking the “Get Tips/Help” button
+            {displayText}
           </p>
           <div className="overlap-2">
             <div className="text-wrapper-15">Get</div>
-            <button className="text-wrapper-16 rectangle-2" type="submit">Get Tips/Help</button>
+            <button className="text-wrapper-16 rectangle-2" onClick={generateTips}>Get Tips/Help</button>
           </div>
         </div>
         <img className="game-icons-ouroboros" alt="Game icons ouroboros" src={Logo} />
