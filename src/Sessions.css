@@ -1,80 +1,78 @@
-
-
+/* New CSS for the layout */
 .session {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background: linear-gradient(to right, black, red); /* Apply gradient to the entire page */
 }
 
-.sessions .header {
+.session .header {
+  font-family: "Poppins-Regular", Helvetica;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px; /* Add padding or adjust as needed */
   color: white;
+  background: transparent; /* No background for the header */
 }
 
-.settings-button {
-  /* If the button needs additional styling */
-  /* For example, to align it vertically with the logo */
-  display: flex;
-  align-items: center;
+.session .button-link {
+  color: white;
 }
 
-.sessions .logo {
+.session .logo {
   display: flex;
   align-items: center;
   color: white;
 }
 
-.title {
-  color: white;
+.session .logo-img {
+  width: 125px;
+  height: auto;
+  margin-right: 10px;
 }
 
-.logo-img {
-  width: 125px; /* Adjust the width as needed */
-  height: auto; /* Retains aspect ratio */
-  margin-right: 10px; /* Spacing between the logo and the company name */
-}
-
-.logo h1 {
+.session .logo h1 {
   margin: 0;
 }
 
-.main-content {
+.session .main-content {
   flex: 1;
   display: flex;
-  flex-direction: column; /* Change to column to stack elements vertically */
-  align-items: center; /* Center items horizontally */
-  background: linear-gradient(to right, black, red);
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
-.title {
+.session .title {
   color: white;
-  margin-bottom: 20px; /* Add margin to create space between the title and the table */
+  margin-bottom: 20px;
 }
 
-.rounded-box {
+.session .rounded-box {
   border-radius: 15px;
   padding: 20px;
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-height: 60vh; /* Set a maximum height for the table */
-  overflow-y: auto; /* Enable vertical scrolling when content exceeds the maximum height */
+  max-height: 60vh;
+  overflow-y: auto;
 }
 
-.data-table {
+/* Rest of your existing CSS for the table styling */
+/* ... */
+
+
+.session .data-table {
   border-collapse: collapse; /* Remove default table borders */
   width: 100%;
 }
 
-.data-table th {
+.session .data-table th {
   text-align: left;
   padding: 8px;
 }
 
-.data-table th button {
+.session .data-table th button {
   background: blue; /* Blue button background color */
   color: white;
   border: none;
@@ -83,7 +81,7 @@
   cursor: pointer;
 }
 
-.blue-button {
+.session .blue-button {
   background: blue; /* Blue button background color */
   color: white;
   border: none;
@@ -92,16 +90,16 @@
   cursor: pointer;
   text-align: right;
 }
-.data-table th:not(:first-child) {
+.session .data-table th:not(:first-child) {
   padding-left: 20px;
 }
 
-.data-table td {
+.session .data-table td {
   padding: 8px;
   border-bottom: 1px solid #ccc; /* Row borders */
 }
 
-.data-table tbody tr:last-child td {
+.session .data-table tbody tr:last-child td {
   border-bottom: none; /* Remove bottom border from the last row */
 }
 

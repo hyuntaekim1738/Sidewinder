@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sessions.css";
 import Logo from './game-icons-ouroboros.png';
+import {Link } from 'react-router-dom';
 import Filter from './filter.svg';
 
 const Sessions = () => {
@@ -12,17 +13,19 @@ const Sessions = () => {
           <h1>Sidewinder</h1>
         </div>
         <div className="settings-button">
-          <button className="blue-button">Settings</button>
+          <button className="blue-button" href="/settings"><Link className="button-link" to="/settings">Settings</Link></button>
         </div>
       </div>
-      
+
       <div className="main-content">
-        <h2 className="title"> Home </h2>
+        <h2 className="title">Home</h2>
         <div className="rounded-box">
           <table className="data-table">
             <thead>
               <tr>
-                <th><button className="blue-button">Filter</button></th>
+                <th>
+                  <button className="blue-button">Filter</button>
+                </th>
                 <th>Vehicle Make/Model</th>
                 <th>Total Time</th>
                 <th>Date</th>
@@ -56,4 +59,5 @@ const Sessions = () => {
 }
 
 export default Sessions;
+
 
