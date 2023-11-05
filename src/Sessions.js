@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import backgroundImage from "./media/gradl.jpg";
+import pencil from "./media/pencil.png";
 
 const Sessions = () => {
   const [raceData, setRaceData] = useState([]);
@@ -45,10 +46,9 @@ const Sessions = () => {
       <div className="header">
         <div className="logo">
           <img src={Logo} alt="Company Logo" className="logo-img" />
-          <h1>Sidewinder</h1>
         </div>
         <div className="settings-button">
-          <button className="blue-button" href="/settings">
+          <button className="session-button" href="/settings">
             <Link className="button-link" to="/settings">
               Settings
             </Link>
@@ -58,9 +58,19 @@ const Sessions = () => {
 
       <div className="flex-container">
         <div className="left-side">
-          <div className="rounded-box2"><h2>Notes</h2></div>
+          <div className="rounded-box2">
+            <div className="notes-header">
+              <h2>Notes</h2> <img className="edit-pencil" src={pencil}></img>
+            </div>
+            <div className="notes-section">
+              <p> The user may enter personal notes here detailing anything that they believe to be of significance.
+                The notes may be of any length; any overflow will expand this section into a scrollpane that allows
+                users to view every detail they entered while keeping the page compact.
+              </p>
+            </div>
+          </div>
           <div className="rounded-box3">
-          <div>
+          <div className="select-container">
               <select
                 value={selectedDate}
                 onChange={(e) => setSelectedDate(e.target.value)}
@@ -83,7 +93,7 @@ const Sessions = () => {
                   </option>
                 ))}
               </select>
-              <button onClick={handleSubmit}>Submit</button>
+              <button className="session-button" onClick={handleSubmit}>Submit</button>
               {filteredData.map((item, index) => (
                 <div key={index}>
                   <h2>Date: {item.Date}</h2>

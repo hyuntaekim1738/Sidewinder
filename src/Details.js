@@ -15,7 +15,6 @@ const Details = () => {
         <div className="header">
           <div className="logo">
             <img src={Logo} alt="Company Logo" className="logo-img" />
-            <h1>Sidewinder</h1>
           </div>
         </div>
         <div className="overlap-group">

@@ -1,13 +1,14 @@
-/* New CSS for the layout */
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 .session {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow-y: hidden;
   background-size: cover; /* Cover the entire div */
     background-repeat: no-repeat; /* Do not repeat the image */
     height: 100vh; /* Adjust as needed */
@@ -87,7 +88,9 @@ body {
   overflow-y: auto;
 }
 
-.session .rounded-box2 {
+.rounded-box2 {
+  display: flex;
+  flex-direction: column;
   border-radius: 15px;
   padding: 20px;
   margin: 30px;
@@ -98,6 +101,27 @@ body {
   overflow-y: auto;
 }
 
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.notes-header h2 {
+  margin: 0;
+}
+
+.edit-pencil {
+  height: 20px; /* Adjust size as needed */
+  width: 20px; /* Adjust size as needed */
+  cursor: pointer;
+}
+
+.notes-section {
+  flex: 1;
+}
+
 .session .rounded-box3 {
   border-radius: 15px;
   padding: 20px;
@@ -105,12 +129,41 @@ body {
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 35vw;
-  height: 41vh;
+  height: 36vh;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Rest of your existing CSS for the table styling */
-/* ... */
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.session select{
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.session .session-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.session-button:hover {
+  background-color: #0056b3;
+}
 
 
 .session .data-table {
