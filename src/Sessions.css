@@ -1,0 +1,32 @@
+/* Your existing CSS styles */
+
+/* New styles for the table */
+.sessions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sessions-table th, .sessions-table td {
+  border: 1px solid #acacac;
+  padding: 10px;
+  text-align: center;
+}
+
+.sessions .filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  background-color: #2f89fc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sessions .icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}

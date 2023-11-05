@@ -1,0 +1,265 @@
+.login {
+  background-color: linear-gradient(to right, black, red);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.login .div {
+  background: linear-gradient(to right, black, red);
+  background-color: linear-gradient(to right, black, red);
+  height: 1024px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.login .game-icons-ouroboros {
+  height: 107px;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 105px;
+}
+
+.login .overlap-group {
+  height: 457px;
+  left: 474px;
+  position: absolute;
+  top: 302px;
+  width: 607px;
+}
+
+.login .rectangle {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 7px #0000008c;
+  height: 457px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 464px;
+}
+
+.login .text-wrapper {
+  color: #000000;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 166px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 165px;
+  width: 255px;
+
+  text-align: center; /* Center-align text inside the input */
+}
+
+.login .text-wrapper-2 {
+  color: #000000;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 166px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 257px;
+  width: 255px;
+  text-align: center;
+}
+
+
+/* Additional styling to center the text */
+.login .rectangle-3::placeholder,
+.login .rectangle-4::placeholder {
+  text-align: center; /* Center-align the placeholder text */
+}
+.login .vector {
+  height: 23px;
+  left: 89px;
+  position: absolute;
+  top: 166px;
+  width: 26px;
+}
+
+.login .material-symbols {
+  height: 32px;
+  left: 83px;
+  position: absolute;
+  top: 255px;
+  width: 39px;
+}
+
+.login .rectangle-2 {
+  background-color: #ffffff05;
+  border: 1px solid;
+  border-color: #00000066;
+  border-radius: 10px;
+  height: 48px;
+  left: 76px;
+  position: absolute;
+  top: 44px;
+  width: 312px;
+}
+
+.login .rectangle-3 {
+  background-color: #ffffff05;
+  border: 1px solid;
+  border-color: #00000066;
+  border-radius: 10px;
+  height: 48px;
+  left: 76px;
+  position: absolute;
+  top: 154px;
+  width: 312px;
+}
+
+.login .rectangle-4 {
+  background-color: #ffffff05;
+  border: 1px solid;
+  border-color: #00000066;
+  border-radius: 10px;
+  height: 48px;
+  left: 76px;
+  position: absolute;
+  top: 247px;
+  width: 312px;
+}
+
+.login .text-wrapper-3 {
+  color: #00000099;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  left: 171px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 57px;
+}
+
+.login .google-logo {
+  height: 26px;
+  left: 91px;
+  object-fit: cover;
+  position: absolute;
+  top: 55px;
+  width: 26px;
+}
+
+.login .line {
+  height: 1px;
+  left: 246px;
+  object-fit: cover;
+  position: absolute;
+  top: 123px;
+  width: 142px;
+}
+
+.login .img {
+  height: 1px;
+  left: 76px;
+  object-fit: cover;
+  position: absolute;
+  top: 123px;
+  width: 139px;
+}
+
+.login .text-wrapper-4 {
+  color: #000000cc;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 221px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 113px;
+}
+
+.login .rectangle-5 {
+  background-color: #0d63d1;
+  border-radius: 5px;
+  height: 48px;
+  left: 76px;
+  position: absolute;
+  top: 352px;
+  width: 312px;
+}
+
+.login .p {
+  color: #0d63d1;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 120px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 401px;
+  width: 505px;
+}
+
+.login .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 183px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 359px;
+  width: 102px;
+}
+
+.login .text-wrapper-6 {
+  color: #2f89fc;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  left: 176px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 312px;
+}
+
+.login .text-wrapper-7 {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 48px;
+  font-weight: 400;
+  left: 116px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 36px;
+  white-space: nowrap;
+  width: 309px;
+}
+
+.login .vector-2 {
+  height: 16px;
+  left: 4164px;
+  position: absolute;
+  top: 1335px;
+  width: 22px;
+}
+
+.login .text-wrapper-8 {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 650px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 243px;
+  width: 178px;
+}
+
