@@ -1,220 +1,73 @@
 .settings {
-  background: linear-gradient(to right, black, red); /* Adjust gradient colors as needed */
+  background: linear-gradient(to right, black, red);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  padding: 10px; /* Add padding or adjust as needed */
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 20px; /* Adjust as needed */
+}
+
+.logo-img {
+  height: 50px; /* Adjust the size of the logo */
+  width: 50px;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.overlap-group {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 7px #0000008c;
+  height: 500px;
+  width: 400px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw; /* Adjust to cover the full viewport width */
-  height: 100vh; /* Cover the full viewport height */
+  justify-content: center;
 }
-  
-  .settings .div {
-    background: linear-gradient(to right, black, red);
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    width: 100vw;
-  }
-  
-  .settings .game-icons-ouroboros {
-    height: 107px;
-    left: 0;
-    position: absolute;
-    top: 10px;
-    width: 105px;
-  }
-  
-  .settings .overlap-group {
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0px 4px 7px #0000008c;
-    height: 493px;
-    left: 474px;
-    position: absolute;
-    top: 302px;
-    width: 464px;
-  }
-  
-  .settings .overlap {
-    height: 48px;
-    left: 76px;
-    position: absolute;
-    top: 263px;
-    width: 312px;
-  }
-  
-  .settings .text-wrapper {
-    color: #000000;
-    font-family: "Poppins-Regular", Helvetica;
-    font-size: 24px;
-    font-weight: 400;
-    left: 42px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 5px;
-    width: 255px;
-  }
-  
-  .settings .rectangle {
-    height: 48px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 312px;
-  }
-  
-  .settings .overlap-2 {
-    height: 48px;
-    left: 76px;
-    position: absolute;
-    top: 44px;
-    width: 334px;
-  }
-  
-  .settings .rectangle-2 {
-    background-color: #ffffff05;
-    border: 1px solid;
-    border-color: #00000066;
-    border-radius: 10px;
-    height: 48px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 312px;
-  }
-  
-  .settings .text-wrapper-2 {
-    color: #000000;
-    font-family: "Poppins-Regular", Helvetica;
-    font-size: 24px;
-    font-weight: 400;
-    left: 79px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 8px;
-    width: 255px;
-  }
-  
-  .settings .overlap-3 {
-    height: 48px;
-    left: 76px;
-    position: absolute;
-    top: 118px;
-    width: 332px;
-  }
-  
-  .settings .text-wrapper-3 {
-    color: #000000;
-    font-family: "Poppins-Regular", Helvetica;
-    font-size: 24px;
-    font-weight: 400;
-    left: 77px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 8px;
-    width: 255px;
-  }
-  
-  .settings .div-wrapper {
-    background-color: #2f89fc;
-    border: 1px solid;
-    border-color: #00000066;
-    border-radius: 10px;
-    height: 50px;
-    left: 76px;
-    position: absolute;
-    top: 343px;
-    width: 130px;
-  }
-  
-  .settings .text-wrapper-4 {
-    color: #ffffff;
-    font-family: "Poppins-Regular", Helvetica;
-    font-size: 24px;
-    font-weight: 400;
-    left: 26px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 9px;
-    width: 75px;
-  }
-  
-  .settings .overlap-4 {
-    height: 50px;
-    left: 255px;
-    position: absolute;
-    top: 343px;
-    width: 151px;
-  }
-  
-  .settings .rectangle-3 {
-    background-color: #ffffff05;
-    border: 1px solid;
-    border-color: #00000066;
-    border-radius: 10px;
-    height: 50px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 130px;
-  }
-  
-  .settings .text-wrapper-5 {
-    color: #000000;
-    font-family: "Poppins-Regular", Helvetica;
-    font-size: 24px;
-    font-weight: 400;
-    left: 26px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 10px;
-    width: 125px;
-  }
-  
-  .settings .overlap-5 {
-    height: 48px;
-    left: 76px;
-    position: absolute;
-    top: 189px;
-    width: 334px;
-  }
-  
-  .settings .text-wrapper-6 {
-    color: #ffffff;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 48px;
-    font-weight: 400;
-    left: 116px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 36px;
-    white-space: nowrap;
-    width: 309px;
-  }
-  
-  .settings .vector {
-    height: 16px;
-    left: 2070px;
-    position: absolute;
-    top: 1301px;
-    width: 22px;
-  }
-  
-  .settings .text-wrapper-7 {
-    color: #ffffff;
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 40px;
-    font-weight: 400;
-    left: 629px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 227px;
-    width: 165px;
-  }
+
+.setting-input {
+  margin-bottom: 10px;
+}
+
+.rounded-input {
+  background-color: #ffffff05;
+  border: 1px solid;
+  border-color: #00000066;
+  border-radius: 10px;
+  height: 48px;
+  color: #000000;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+}
+
+.big-button {
+  font-size: 16px;
+  margin: 10px;
+}
+
   

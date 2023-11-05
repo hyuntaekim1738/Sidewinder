@@ -15,7 +15,9 @@ const Sessions = () => {
           <button className="blue-button">Settings</button>
         </div>
       </div>
+      
       <div className="main-content">
+        <h2 className="title"> Home </h2>
         <div className="rounded-box">
           <table className="data-table">
             <thead>
